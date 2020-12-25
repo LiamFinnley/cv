@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact me</title>
+</head>
+
+<body>
+  <h1>Sorry mate, I have a boyfriend.</h1>
+  <p>But if you want to fiend friends, you try <a href="https://www.wikihow.com/Make-Friends">this</a>.</p>
+  <p>Good luck!</p>
+
+
+  <h1>Just kidding, fill out the form to contact me:</h1>
+
+
+  <!-- Das Attribut "action" wurde von index.html ersetzt, sodass nicht
+    zur Homepage gewechselt wird, sondern eine E-Mail geschickt wird.
+
+    method="post" ist der default-Wert, der bleibt bestehen.
+    enctype="text/plain" hilft, dass der Text in der Mail nicht so aussieht:
+
+    Last+name=A&First+name=B&Email=C%40d&email+confirm=C%
+    40d&Password=password&Passwordconfirm=password&Date+of+Birth=1995-04-11
+    &Message=Lorem+ipsum+dolor+sit+amet&newsletter=on&Sumbit+your+message=Senden
+
+    sondern irgendwie so:
+
+    Last name=a
+    First name=B
+    Email=c@d.ch
+    email confirm=c@d
+    Password=asdf
+    Passwordconfirm=asdf
+    Date of Birth=1995-04-11
+    Message=bbrrrrrrrrrrrrrrrr announcement
+    newsletter=on
+    Sumbit your message=Senden
+
+-->
+
+  <form class="" action="mailto:linda.scratch@gmail.com" method="post" enctype="text/plain">
+    <table cellspacing="20">
+      <tr>
+        <td>
+          Last name:
+        </td>
+        <td>
+          <input type="text" name="Last name" placeholder="enter your last name">
+        </td>
+      </tr>
+      <td>
+        First name:
+      </td>
+      <td>
+        <input type="text" name="First name" placeholder="enter your first name">
+      </td>
+      <tr>
+        <td>
+          Email
+        </td>
+        <td>
+          <input type="email" name="Email" placeholder="enter your email adress">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Confirm email address
+        </td>
+        <td>
+          <input type="email" name="email confirm" placeholder="enter your e-mail adress">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Password
+        </td>
+        <td>
+          <input type="password" name="Password" placeholder="choose a password">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Confirm password
+        </td>
+        <td>
+          <input type="password" name="Passwordconfirm" placeholder="repeat password">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Date of birth
+        </td>
+        <td>
+          <input type="date" name="Date of Birth">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Your message:
+        </td>
+        <td>
+          <textarea name="Message" rows="15" cols="120" placeholder="Enter your message here..."></textarea>
+        </td>
+      </tr>
+    </table>
+    <p><input type="checkbox" name="newsletter">Yes, I do want to assign to your newsletter</p>
+    <p>
+      <input type="Reset" value="Reset form">
+      <input type="submit" value="Sumbit your message">
+    </p>
+  </form>
+</body>
+
+</html>
